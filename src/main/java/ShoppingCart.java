@@ -29,6 +29,7 @@ public class ShoppingCart {
             for (int j : shoppingCart.values()){
                 total += j;
             }
+            System.out.println(total);
             return total;
         }
     public int NumberOfFruitsInShoppingCart() {

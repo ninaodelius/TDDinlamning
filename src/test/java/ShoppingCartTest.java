@@ -20,7 +20,7 @@ public class ShoppingCartTest {
         assertTrue(shoppingCart.isAppleInShoppingCart("Apple"));
     }
 
-    //third test
+    //fourth test
     @Test
     void testIsNotAppleInShoppingCart() {
         assertFalse(shoppingCart.isAppleInShoppingCart("Orange"));
@@ -29,7 +29,7 @@ public class ShoppingCartTest {
     //second test
     @Test
     void testTotalCost() {
-        assertEquals(20,shoppingCart.sumTotal());
+        assertEquals(20,shoppingCart.sumTotal(), 0.5);
         //assertNotEquals(15,shoppingCart.sumTotal());
     }
 
