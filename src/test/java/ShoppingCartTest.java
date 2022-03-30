@@ -13,10 +13,23 @@ public class ShoppingCartTest {
        shoppingCart = new ShoppingCart();
     }
 
+    //first test
     @Test
     @DisplayName("Running a test")
-    public void testIsItApple () {
-        assertTrue(shoppingCart.isAnApple("Apple"));
+    void testIsAppleInShoppingCart () {
+        assertTrue(shoppingCart.isAppleInShoppingCart("Apple"));
     }
 
+    //second test
+    @Test
+    void testTotalCost() {
+        assertEquals(20,shoppingCart.sumTotal());
+        //assertNotEquals(15,shoppingCart.sumTotal());
+    }
+
+    //third test
+    @Test
+    void testNumberOfFruitsInShoppingCart() {
+        assertEquals(4,shoppingCart.NumberOfFruitsInShoppingCart());
+    }
 }
