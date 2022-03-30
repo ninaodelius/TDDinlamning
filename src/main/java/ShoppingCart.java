@@ -19,7 +19,6 @@ public class ShoppingCart {
                 if(i.equals("Apple") && i.equals(a)) {
                     return true;
                 }
-                return false;
                 }
             return false;
             }
@@ -30,7 +29,6 @@ public class ShoppingCart {
             for (int j : shoppingCart.values()){
                 total += j;
             }
-
             return total;
         }
     public int NumberOfFruitsInShoppingCart() {

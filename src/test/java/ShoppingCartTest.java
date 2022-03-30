@@ -20,6 +20,12 @@ public class ShoppingCartTest {
         assertTrue(shoppingCart.isAppleInShoppingCart("Apple"));
     }
 
+    //third test
+    @Test
+    void testIsNotAppleInShoppingCart() {
+        assertFalse(shoppingCart.isAppleInShoppingCart("Orange"));
+    }
+
     //second test
     @Test
     void testTotalCost() {
