@@ -36,6 +36,6 @@ public class ShoppingCartTest {
     //third test
     @Test
     void testNumberOfFruitsInShoppingCart() {
-        assertEquals(4,shoppingCart.NumberOfFruitsInShoppingCart());
+        assertEquals(3,shoppingCart.NumberOfFruitsInShoppingCart());
     }
 }
