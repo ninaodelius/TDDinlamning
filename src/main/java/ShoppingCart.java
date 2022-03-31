@@ -8,7 +8,7 @@ public class ShoppingCart {
             shoppingCart.put("Orange", 4);
             shoppingCart.put("Peach", 6);
             shoppingCart.put("Cherry", 8);
-            //shoppingCart.put("Pear", 1);
+
             //System.out.println(shoppingCart);
         return shoppingCart;
     }
@@ -40,6 +40,14 @@ public class ShoppingCart {
         }
         return numberOfFruits;
     }
+
+    public HashMap<String, Integer> addFruitToShoppingCart(String fruitName, int fruitPrice) {
+            HashMap<String, Integer> shoppingCart = createShoppingCart();
+            shoppingCart.put(fruitName, fruitPrice);
+            return shoppingCart;
+        }
+
+
 }
 
 

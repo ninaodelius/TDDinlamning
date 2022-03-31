@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ShoppingCartTest {
     ShoppingCart shoppingCart;
 
-
     @BeforeEach
     void setUp() {
        shoppingCart = new ShoppingCart();
@@ -30,12 +29,17 @@ public class ShoppingCartTest {
     @Test
     void testTotalCost() {
         assertEquals(20,shoppingCart.sumTotal(), 0.5);
-        //assertNotEquals(15,shoppingCart.sumTotal());
     }
 
     //third test
     @Test
     void testNumberOfFruitsInShoppingCart() {
         assertEquals(4,shoppingCart.NumberOfFruitsInShoppingCart());
+    }
+
+    @Test
+    void testAddAnotherFruitToShoppingCart() {
+        assertNotEquals(shoppingCart.createShoppingCart(),shoppingCart.addFruitToShoppingCart("Pear", 1));
+        
     }
 }

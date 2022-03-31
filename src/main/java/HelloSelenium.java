@@ -37,6 +37,9 @@ public class HelloSelenium {
             searchBox.sendKeys("hello world");
             searchButton.click();
 
+            String contentHelloWorld = driver.findElement(By.id("content")).getText();
+            System.out.println(contentHelloWorld);
+
             //applied wait time
             driver.manage().timeouts().implicitlyWait(Duration.ofMillis(2000));
             Thread.sleep(2 * 1000);
@@ -57,8 +60,6 @@ public class HelloSelenium {
 
             //refresh the current page
             driver.navigate().refresh();
-
-            //searchBox.sendKeys(Keys.RETURN);
             //searchBox.sendKeys(Keys.ARROW_DOWN);
 
             //applied wait time
