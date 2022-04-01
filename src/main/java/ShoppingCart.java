@@ -13,10 +13,10 @@ public class ShoppingCart {
         return shoppingCart;
     }
         //first method
-        public boolean isAppleInShoppingCart (String a){
+        public boolean isAppleInShoppingCart (String givenFruitName){
             HashMap<String, Integer> shoppingCart = createShoppingCart();
-            for (String i : shoppingCart.keySet()) {
-                if(i.equals("Apple") && i.equals(a)) {
+            for (String actualFruitName : shoppingCart.keySet()) {
+                if(actualFruitName.equals("Apple") && actualFruitName.equals(givenFruitName)) {
                     return true;
                 }
                 }
@@ -26,8 +26,8 @@ public class ShoppingCart {
         public int sumTotal() {
             HashMap<String, Integer> shoppingCart = createShoppingCart();
             int total = 0;
-            for (int j : shoppingCart.values()){
-                total += j;
+            for (int eachValueInHashMap : shoppingCart.values()){
+                total += eachValueInHashMap;
             }
             System.out.println(total);
             return total;
@@ -35,17 +35,17 @@ public class ShoppingCart {
     public int NumberOfFruitsInShoppingCart() {
         HashMap<String, Integer> shoppingCart = createShoppingCart();
         int numberOfFruits = 0;
-        for(String j : shoppingCart.keySet()) {
+        for(String eachKeyInHashMap : shoppingCart.keySet()) {
             numberOfFruits++;
         }
         return numberOfFruits;
     }
 
-    public HashMap<String, Integer> addFruitToShoppingCart(String fruitName, int fruitPrice) {
-            HashMap<String, Integer> shoppingCart = createShoppingCart();
-            shoppingCart.put(fruitName, fruitPrice);
-            return shoppingCart;
-        }
+    //public HashMap<String, Integer> addFruitToShoppingCart(String fruitName, int fruitPrice) {
+     //       HashMap<String, Integer> shoppingCart = createShoppingCart();
+      //      shoppingCart.put(fruitName, fruitPrice);
+       //     return shoppingCart;
+       // }
 
 
 }
